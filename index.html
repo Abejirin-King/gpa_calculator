@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GPA Calculator</h1>
+    <form id="assignmentForm">
+      <input type="text" id="assignmentName" placeholder="Assignment Name" required>
+      <input type="number" id="assignmentGrade" placeholder="Grade (0-5)" min="0" max="5" step="0.1" required>
+      <button type="submit">Add Assignment</button>
+    </form>
+
+    <h2>Assignments</h2>
+    <ul id="assignmentList"></ul>
+
+    <h2>GPA: <span id="gpa">0.00</span></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
